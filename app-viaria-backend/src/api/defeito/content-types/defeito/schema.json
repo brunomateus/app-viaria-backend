@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "defeitos",
+  "info": {
+    "singularName": "defeito",
+    "pluralName": "defeitos",
+    "displayName": "Defeito"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "endereco": {
+      "type": "string"
+    },
+    "latitude": {
+      "type": "decimal"
+    },
+    "longitude": {
+      "type": "decimal"
+    },
+    "classe": {
+      "type": "enumeration",
+      "enum": [
+        "sem-defeitos",
+        "pothole",
+        "crack",
+        "patch"
+      ]
+    },
+    "dataDeColeta": {
+      "type": "datetime"
+    },
+    "imagem": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}
